@@ -1,0 +1,24 @@
+.main-div {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #21c491;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-field {
+    border: 7px solid black;
+    padding: 3px;
+    background-color: #aaefd9;
+}
+
+.image-div {
+    background-color: transparent;
+}
+
+.hero-image {
+    width: 75px;
+    height: 75px;
+}
