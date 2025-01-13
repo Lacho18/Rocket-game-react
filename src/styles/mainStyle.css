@@ -22,3 +22,26 @@
     width: 75px;
     height: 75px;
 }
+
+.bullet {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.obstacle {
+    position: absolute;
+    background-color: black;
+}
+
+.start-window {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background-color: rgba(193, 193, 193, 0.7);
+}
