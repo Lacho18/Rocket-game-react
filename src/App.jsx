@@ -26,11 +26,10 @@ function App() {
     obstaclesInterval = setInterval(() => {
       setObstacles((oldObstacles) => {
         let newObstacle = ++obstacleCounter;
-        oldObstacles.push(newObstacle);
 
-        return oldObstacles;
+        return [...oldObstacles, newObstacle];
       });
-    }, Math.round(Math.random() * 100 + 2000));
+    }, Math.round(Math.random() * 100 + 2500));
   }
 
   function mouseMoveHandler(e) {
@@ -115,13 +114,16 @@ function App() {
           />
         ))}
 
-        {obstacles.map((obstacle) => (
+        {/*obstacles.map((obstacle) => (
           <Obstacle
             key={obstacle}
             id={obstacle}
             removeObstacle={removeObstacle}
+            bullets={bullets}
           />
-        ))}
+        ))*/}
+
+        <Obstacle id={1} removeObstacle={removeObstacle} bullets={bullets} />
 
         <img
           className="hero-image"
